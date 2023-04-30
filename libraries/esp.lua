@@ -2,16 +2,16 @@ function Alive(Player)
     if Player and Player.Character and Player.Character:FindFirstChild("HumanoidRootPart") ~= nil and Player.Character:FindFirstChild("Humanoid") ~= nil and Player.Character:FindFirstChild("Head") ~= nil and
     Player:FindFirstChild("LeftFoot") ~= nil and Player:FindFirstChild("RightFoot") ~= nil and Player:FindFirstChild("RightUpperArm") ~= nil and Player:FindFirstChild("LeftUpperArm") ~= nil and
     Player:FindFirstChild("Humanoid").Health > 0 then
-        return true
+        return true;
     end
-    return false
+    return false;
 end
 
 --local w2s = workspace.CurrentCamera.worldToViewportPoint;
 
 function w2s(pos)
-    local 2dPos = workspace.CurrentCamera:WorldToViewportPoint(pos);
-    return 2dPos;
+    local twodPos = workspace.CurrentCamera:WorldToViewportPoint(pos);
+    return twodPos;
 end
 
 local library = {
